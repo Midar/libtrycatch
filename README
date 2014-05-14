@@ -1,0 +1,2 @@
+This is a small library providing C++-like try/catch for C with almost
+exactly the same syntax, see example.c.
