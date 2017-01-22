@@ -25,8 +25,8 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef __TRYCATCH_H__
-#define __TRYCATCH_H__
+#ifndef TRYCATCH_H_INCLUDED
+#define TRYCATCH_H_INCLUDED
 
 #include <setjmp.h>
 #include <stdnoreturn.h>
