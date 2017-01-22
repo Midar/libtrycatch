@@ -11,3 +11,6 @@ libtrycatch.a: trycatch.o
 
 example: example.o libtrycatch.a
 	${CC} -L. -ltrycatch -o $@ $<
+
+trycatch.o: trycatch.c trycatch.h
+example.o: example.c trycatch.h
