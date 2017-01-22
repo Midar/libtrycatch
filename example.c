@@ -37,7 +37,6 @@ main()
 		try {
 			puts("try2");
 		} catch (ex) {
-			(void)ex;
 			puts("this should not be called");
 		}
 
@@ -50,7 +49,6 @@ main()
 		throw(1);
 		return 1;
 	} catch (ex) {
-		(void)ex;
 	}
 
 	return 0;

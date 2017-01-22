@@ -45,9 +45,9 @@
 		TRYCATCH_CONCAT(trycatch_frame, __LINE__)->jmpbuf =	   \
 		    &TRYCATCH_CONCAT(trycatch_jmpbuf, __LINE__);	   \
 	if (trycatch_ex == 0)
-#define catch(ex)							\
-	trycatch_frame_pop();						\
-	for (int ex = trycatch_ex; trycatch_ex != 0; trycatch_ex = 0)
+#define catch(ex)							       \
+	trycatch_frame_pop();						       \
+	for (int ex = trycatch_ex; trycatch_ex != 0; trycatch_ex = 0, (void)ex)
 #define throw(ex) trycatch_throw(ex)
 #define rethrow trycatch_throw(trycatch_ex)
 
