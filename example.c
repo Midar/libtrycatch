@@ -40,9 +40,15 @@ main()
 			puts("this should not be called");
 		}
 
+		try {
+			throw(7);
+		} catch (ex) {
+			rethrow;
+		}
+
 		throw(5);
 	} catch (ex) {
-		printf("caught %d (should be 5)\n", ex);
+		printf("caught %d (should be 7)\n", ex);
 	}
 
 	try {
